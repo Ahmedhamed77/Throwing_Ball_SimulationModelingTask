@@ -65,6 +65,8 @@ class Ball {
         this.y1 = this.y0 + this.v0 * Math.sin(this.a * Math.PI / 180.0) * this.t - this.g * this.t * this.t / 2.0; // Y coordinate <<height>>
 
 
+        document.getElementById("timeText").value = this.t;
+
         this.pushData(chart, this.x1, this.y1);
 
 
